@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GB WhatsApp - Experience the future of messaging with premium features, unlimited customization, and powerful privacy controls. Download the latest version now.">
+    <meta name="keywords" content="GB WhatsApp download, GBWhatsApp latest version, WhatsApp plus, modded WhatsApp, WhatsApp pro">
+    <meta name="author" content="GB WhatsApp">
+    <meta name="google-site-verification" content="1ADDpjmvyoV37yu-C86TVN-0sBtBEp_4qG4hje6veOM" />
+    <title>GB WhatsApp - Premium Messaging with Unlimited Possibilities | Download Latest APK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #25D366;
+            --secondary: #128C7E;
+            --dark: #075E54;
+            --light: #DCF8C6;
+            --white: #ffffff;
+            --shadow: rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background: #f8f9fa;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        header {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px var(--shadow);
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 3rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            padding: 150px 3rem 100px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content .highlight {
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--secondary);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .hero-image {
+            animation: slideInRight 1s ease-out;
+            text-align: center;
+        }
+
+        .phone-mockup {
+            font-size: 15rem;
+            animation: float 4s ease-in-out infinite;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+        }
+
+        .stats-section {
+            background: white;
+            padding: 4rem 3rem;
+            box-shadow: 0 -10px 30px var(--shadow);
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .features-showcase {
+            padding: 6rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.4s;
+            animation: fadeInUp 1s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(37, 211, 102, 0.2);
+        }
+
+        .feature-box:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-emoji {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        .feature-box h3 {
+            font-size: 1.6rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .feature-box p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .why-choose {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 6rem 3rem;
+        }
+
+        .why-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .why-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            gap: 1.5rem;
+            align-items: start;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: all 0.3s;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .why-item:nth-child(even) {
+            animation: slideInRight 1s ease-out;
+        }
+
+        .why-item:hover {
+            transform: translateX(10px);
+        }
+
+        .why-icon {
+            font-size: 3rem;
+            min-width: 60px;
+        }
+
+        .why-content h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .why-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .download-cta {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
+            padding: 6rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-cta::before {
+            content: '💬';
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.05;
+            top: -50px;
+            left: -50px;
+            animation: rotate 20s linear infinite;
+        }
+
+        .download-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .download-content h2 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-content p {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 3rem;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonials {
+            padding: 6rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+            animation: fadeInUp 1s ease-out;
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: #555;
+            font-style: italic;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        .faq-section {
+            background: #f8f9fa;
+            padding: 6rem 3rem;
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--secondary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .disclaimer-box {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-menu {
+                gap: 1rem;
+            }
+
+            .hero {
+                padding: 120px 1.5rem 60px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .phone-mockup {
+                font-size: 8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">💚</span>
+                GB WhatsApp
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#why">Why GB</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Messaging <span class="highlight">Reimagined</span> for Power Users</h1>
+                <p>Break free from limitations. Experience WhatsApp with supercharged features, complete privacy control, and endless customization possibilities.</p>
+                <a href="https://gbappszone.com" class="btn-primary">Download GBWhatsApp APK</a>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">📱</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">50M+</div>
+                <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Exclusive Features</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Themes Available</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">User Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-showcase" id="features">
+        <div class="section-header">
+            <h2>Powerful Features That Make The Difference</h2>
+            <p>Discover what makes GB WhatsApp the preferred choice for millions</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-emoji">🎭</div>
+                <h3>Ultimate Privacy Control</h3>
+                <p>Take charge of your visibility. Hide online status, freeze last seen, disable read receipts, and control who sees what—all with granular precision.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">🖼️</div>
+                <h3>Superior Media Quality</h3>
+                <p>Share photos in their original glory without compression. Send videos up to 50MB and broadcast up to 90 images simultaneously.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">🎨</div>
+                <h3>Limitless Customization</h3>
+                <p>Transform your interface with thousands of themes. Customize every element from chat bubbles to icon packs and create your signature look.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">🔐</div>
+                <h3>Advanced Security</h3>
+                <p>Protect conversations with app lock, fingerprint authentication, and pattern security. Hide specific chats and prevent message deletion.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">⏰</div>
+                <h3>Smart Scheduling</h3>
+                <p>Plan your messages ahead. Schedule texts for birthdays, anniversaries, or important reminders. Never miss a moment that matters.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">🚀</div>
+                <h3>Performance Boosted</h3>
+                <p>Experience lightning-fast performance with optimized code. Minimal battery drain and efficient data usage keep you connected longer.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">👤</div>
+                <h3>Multi-Account Support</h3>
+                <p>Manage personal and business communications seamlessly. Run multiple WhatsApp numbers on one device without switching.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">💾</div>
+                <h3>Status Saver Pro</h3>
+                <p>Download and save status updates from contacts. Never lose memorable moments shared by friends and family.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-emoji">🤖</div>
+                <h3>Auto-Reply Intelligence</h3>
+                <p>Set smart automated responses. Create custom messages for different contacts or groups when you're unavailable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why">
+        <div class="why-container">
+            <div class="section-header">
+                <h2>Why Choose GB WhatsApp?</h2>
+                <p>The advantages that set us apart from standard messaging apps</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">✨</div>
+                    <div class="why-content">
+                        <h3>Zero Compromises</h3>
+                        <p>Enjoy all standard WhatsApp features plus an extensive arsenal of premium capabilities. No features removed, only additions that enhance your experience.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <div class="why-content">
+                        <h3>User-Centric Design</h3>
+                        <p>Every feature is crafted based on real user feedback. We listen to the community and continuously evolve to meet your messaging needs.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🔄</div>
+                    <div class="why-content">
+                        <h3>Regular Updates</h3>
+                        <p>Stay current with frequent updates that bring new features, security enhancements, and compatibility improvements. We're committed to excellence.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🌐</div>
+                    <div class="why-content">
+                        <h3>Global Community</h3>
+                        <p>Join millions of satisfied users worldwide who have elevated their messaging experience. Be part of a thriving ecosystem of power users.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">💡</div>
+                    <div class="why-content">
+                        <h3>Innovation First</h3>
+                        <p>We pioneer features that later become industry standards. Experience tomorrow's messaging capabilities today with cutting-edge innovations.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🛡️</div>
+                    <div class="why-content">
+                        <h3>Privacy Focused</h3>
+                        <p>Your data security is paramount. Enhanced encryption and privacy controls ensure your conversations remain confidential and secure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-cta" id="download">
+        <div class="download-content">
+            <div class="version-badge">Latest Version 18.10 • Updated October 2024</div>
+            <h2>Ready to Transform Your Messaging?</h2>
+            <p>Join millions experiencing the future of communication. Download now and unlock unlimited potential.</p>
+            <a href="https://gbappszone.com" class="btn-primary">Download GBWhatsApp APK</a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Users Say</h2>
+            <p>Real experiences from real people</p>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The privacy features alone are worth it. Finally, I can control exactly who sees my online status. Game changer!"</p>
+                <p class="testimonial-author">— Sarah M.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Being able to send high-quality images without compression is amazing for my photography work. This app is professional-grade."</p>
+                <p class="testimonial-author">— James R.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The theme customization is incredible! I've personalized every aspect of my WhatsApp. It feels truly mine now."</p>
+                <p class="testimonial-author">— Priya K.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about GB WhatsApp</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How is GB WhatsApp different from regular WhatsApp?
+                </div>
+                <div class="faq-answer">
+                    GB WhatsApp offers extensive customization options, advanced privacy controls, superior media sharing capabilities, and over 100 additional features not available in standard WhatsApp. You get enhanced functionality while maintaining full compatibility with regular WhatsApp users.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I transfer my chats from regular WhatsApp?
+                </div>
+                <div class="faq-answer">
+                    Absolutely! You can easily backup your conversations from official WhatsApp and restore them seamlessly in GB WhatsApp. The migration process preserves all your messages, media files, and contact information without any loss.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is it possible to use both apps simultaneously?
+                </div>
+                <div class="faq-answer">
+                    Yes, GB WhatsApp can run alongside official WhatsApp on the same device. You'll need different phone numbers for each application, making it perfect for managing personal and professional accounts separately.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How often does GB WhatsApp receive updates?
+                </div>
+                <div class="faq-answer">
+                    Our development team releases regular updates to introduce new features, enhance performance, fix bugs, and maintain compatibility with the latest Android versions. Updates typically occur every few weeks to ensure optimal user experience.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are the system requirements?
+                </div>
+                <div class="faq-answer">
+                    GB WhatsApp works on Android devices running version 4.4 or higher. The app requires approximately 52MB of storage space and functions smoothly on most modern smartphones.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#why">Why GB WhatsApp</a>
+                <a href="#download">Download</a>
+                <a href="#faq">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            
+            <p>&copy; 2024 GB WhatsApp. All Rights Reserved.</p>
+            
+            <div class="disclaimer-box">
+                <strong>Disclaimer:</strong> GB WhatsApp is an independent modified version developed by third-party developers. This application is not affiliated with, endorsed by, or connected to WhatsApp Inc. or Facebook. Users should review terms and understand that using modified applications may carry certain risks. Always download from trusted sources and maintain regular backups of your data.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
